@@ -1,0 +1,90 @@
+#Definimos funciones
+
+try:
+    print(cats)
+    
+except:
+    print("Calculadora 0.1 Ricardo")
+    
+finally: 
+    def add(x, y):
+        return x + y
+    def substract(x, y):
+        return x - y
+    def multiply(x, y):
+        return x * y
+    def divide(x, y):
+        return x / y
+    def resto(x, y):
+        return x % y
+    def raiz(x, y):
+        return x ** 0.5
+    def exponenciacion(x, y):
+        return x ** y
+
+# Printamos menú
+
+    print("Select operation")
+    print("1. Suma")
+    print("2. Resta")
+    print("3. Multiplicación")
+    print("4. División")
+    print("5. Resto de la división")
+    print("6. Raiz Cuadrada")
+    print("7. Exponenciación")
+
+#Definimos variables e inputs
+
+    choice = input("Pon el numero de la operación elegida: ")
+    num1 = int(input("Introduce el primer dígito: "))
+    num2 = int(input("Introduce el segundo dígito: "))
+    num3 = (0.5)
+    var1 = "si"
+    var2 = "no"
+
+ # interactuamos con los valosvalores imput
+
+    if choice =="1":
+        print(num1, "+", num2, "=", add(num1, num2))
+        print ("Quieres realizar otra operacion?")
+        resp = input ("escribe si o no: ")
+        if resp == "si":
+            print ("OK")                    
+    elif choice =="2":
+        print(num1, "-", num2, "=", substract(num1, num2))
+        print ("Quieres realizar otra operacion?")
+        resp = input ("escribe si o no: ")
+        if resp == "si":
+            print ("OK") 
+    elif choice =="3":
+        print(num1, "*", num2, "=", multiply(num1, num2))
+        print ("Quieres realizar otra operacion?")
+        resp = input ("escribe si o no: ")
+        if resp == "si":
+            print ("OK") 
+    elif choice =="4":
+        print(num1, "/", num2, "=", divide(num1, num2))
+        print ("Quieres realizar otra operacion?")
+        resp = input ("escribe si o no: ")
+        if resp == "si":
+            print ("OK") 
+    elif choice =="5":
+        print(num1, "%", num2, "=", resto(num1, num2))
+        print ("Quieres realizar otra operacion?")
+        resp = input ("escribe si o no: ")
+        if resp == "si":
+            print ("OK") 
+    elif choice =="6":
+        print("La raiz cuadrada de", num1, "es = ", raiz(num1, num3))
+        print ("Quieres realizar otra operacion?")
+        resp = input ("escribe si o no: ")
+        if resp == "si":
+            print ("OK") 
+    elif choice =="7":
+        print(num1, "**", num2, "=", exponenciacion(num1, num2))
+        print ("Quieres realizar otra operacion?")
+        resp = input ("escribe si o no: ")
+        if resp == "si":
+            print ("OK") 
+    else:
+        print("Caracteres incorrectos")
