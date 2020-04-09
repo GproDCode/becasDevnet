@@ -7,7 +7,7 @@ try:
     print(cats)
     
 except:
-    print("Calculadora 0.1 Ricardo")
+    print("Calculadora 0.2 Ricardo")
     
 finally: 
     def add(x, y):
