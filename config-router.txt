@@ -1,0 +1,5 @@
+!
+interface Loopback5
+ description loopback 5
+ ip address 5.5.5.5 255.255.255.0
+end
